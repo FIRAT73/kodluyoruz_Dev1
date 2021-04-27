@@ -1,0 +1,156 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Hakkında</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style type="text/css">
+    	body{
+			margin: 0;
+			padding: 0;
+			background-image: url(arkaplan.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		p{
+			width: 380px;
+			text-align: justify;
+			color: black;
+			font-family: "Times New Roman";
+			padding: 75px;
+
+
+		}
+		.menubar{
+			margin-top: 10px;
+			width: 100%;
+			padding: 0;
+		}
+
+		.menubar ul{
+			margin-left: 0px;
+			padding: 0;
+			width: 80%;
+
+		}
+
+		.menubar ul li{
+			list-style-type: none;
+			display: inline-block;
+			padding: 10px;
+			margin: 0;
+			line-height: 50px;
+			text-align: center;
+		}
+
+		.menubar a{
+			width: 110px;
+			text-decoration: none;
+			font-size: 12px;
+			padding: 0;
+			color: black;
+			font-weight: bolder;
+			display: block;
+			background-color: #e0d6d600;
+			border-radius: 10px;
+		}
+
+		.menubar a:hover{
+			color: black;
+			box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+		}
+		.kontrol{
+			position: relative;
+			font-size: 30px;
+			float: right;
+			line-height: 60px;
+			padding: 10px;
+			color: black;
+			margin-right: 20px;
+			cursor: pointer;
+			display: none;
+		}
+
+		#kontrol{
+			display: none;
+		}
+
+		@media(max-width: 860px){
+
+			.kontrol{
+				display: block;
+			}
+
+
+			.menubar{
+				position: fixed;
+				margin: 0;
+				padding: 0;
+				width: 100%
+
+
+			}
+
+			.menubar ul{
+				position: absolute;
+				margin-top: 80px;
+				margin-left: 0;
+				width: 100%;
+				box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+				display: none;
+				background-color: #36848a;
+
+
+			}
+
+			.menubar ul li{
+				display: block;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+
+			}
+
+			.menubar a{
+				width: 100%;
+				font-size: 30px;
+				line-height: 70px;
+				border-radius: 0;
+				border-bottom: 1px dotted gray;
+
+			}
+
+			.menubar a:hover{
+				color: black;
+				box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+
+			
+			}
+
+			#kontrol:checked~ul{
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="menubar">
+		<input type="checkbox" id="kontrol">
+		<label for="kontrol" class="kontrol"><i class="fa fa-bars"></i></label>
+		<ul>
+			<li><a href="index.html">Anasayfa</a></li>
+			<li><a href="hakkımda.html">Hakkımda</a></li>
+			<li><a href="yeteneklerim.html">Yeteneklerim</a></li>
+			<li><a href="iletişim.html">İletişim</a></li>
+			<li><a href="soru.html">Soru ve Görüşleriniz</a></li>
+		</ul>
+	</div>
+	<div>
+		<p>
+			Ben Şırnak Çok Programlı Anadolu Lisesinden mezun olarak 2016 yılında Fırat Universitesinde yazılım 
+			mühendisliği programında öğrenim görmeye başladım.Buradaki ilk yılımda ingilizce hazırlık okuyarak 2017 yılında Teknoloji Fakültesinde mesleki öğrenim hayatıma başladım. Hala da öğrenim hayatım devam etmektedir.
+		</p>
+	</div>
+   
+</body>
+</html>

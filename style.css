@@ -1,0 +1,181 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(arkaplan.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.box{
+	width: 500px;
+	background: #e0d6d600;
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-left: 2.5px;
+	margin-top: 1%;
+	color: #fff;
+	font-family: sans-serif;
+}
+.box img{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.box img:hover{
+	transform: scale(0.9);  
+}
+
+.box h1{
+	font-size: 40px;
+	letter-spacing: 4px;
+	font-weight: 100;
+	color: black;
+}
+
+.box h3{
+	font-size: 20px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	color: black;
+	font-family: "Times New Roman";
+}
+
+.box p{
+	text-align: justify;
+	color: black;
+	font-family: "Times New Roman";
+
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.sosyal li{
+	display: inline-block;
+	margin: 6px;
+	list-style: none;
+}
+.sosyal li a{
+	color: #1b0707;
+	font-size: 60px;
+	transition: all ease-in-out 250ms;
+}
+
+.sosyal li a:hover{
+	color: #36848a;
+}
+
+.menubar{
+	margin-top: 10px;
+	width: 100%;
+	padding: 0;
+}
+
+.menubar ul{
+	margin-left: 0px;
+	padding: 0;
+	width: 80%;
+
+}
+
+.menubar ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+}
+
+.menubar a{
+	width: 110px;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 0;
+	color: black;
+	font-weight: bolder;
+	display: block;
+	background-color: #e0d6d600;
+	border-radius: 10px;
+}
+
+.menubar a:hover{
+	color: black;
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+}
+.kontrol{
+	position: relative;
+	font-size: 30px;
+	float: right;
+	line-height: 60px;
+	padding: 10px;
+	color: black;
+	margin-right: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+#kontrol{
+	display: none;
+}
+
+@media(max-width: 860px){
+
+	.kontrol{
+		display: block;
+	}
+
+
+	.menubar{
+		position: fixed;
+		margin: 0;
+		padding: 0;
+		width: 100%
+
+
+	}
+
+	.menubar ul{
+		position: absolute;
+		margin-top: 80px;
+		margin-left: 0;
+		width: 100%;
+		box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+		display: none;
+		background-color: #36848a;
+
+
+	}
+
+	.menubar ul li{
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+	}
+
+	.menubar a{
+		width: 100%;
+		font-size: 30px;
+		line-height: 70px;
+		border-radius: 0;
+		border-bottom: 1px dotted gray;
+
+	}
+
+	.menubar a:hover{
+		color: black;
+		box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+
+	
+	}
+
+	#kontrol:checked~ul{
+		display: block;
+	}
+}
