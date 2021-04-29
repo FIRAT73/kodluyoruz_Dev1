@@ -1,0 +1,247 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Hobilerim</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <style type="text/css">
+
+    	body{
+			margin: 0;
+			padding: 0;
+			background-image: url(arkaplan.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.menubar{
+			margin-top: 10px;
+			width: 100%;
+			padding: 0;
+		}
+
+		.menubar ul{
+			margin-left: 0px;
+			padding: 0;
+			width: 80%;
+
+		}
+
+		.menubar ul li{
+			list-style-type: none;
+			display: inline-block;
+			padding: 10px;
+			margin: 0;
+			line-height: 50px;
+			text-align: center;
+		}
+
+		.menubar a{
+			width: 110px;
+			text-decoration: none;
+			font-size: 12px;
+			padding: 0;
+			color: black;
+			font-weight: bolder;
+			display: block;
+			background-color: #e0d6d600;
+			border-radius: 10px;
+		}
+
+		.menubar a:hover{
+			color: black;
+			box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+		}
+		.kontrol{
+			position: relative;
+			font-size: 30px;
+			float: right;
+			line-height: 60px;
+			padding: 10px;
+			color: black;
+			margin-right: 20px;
+			cursor: pointer;
+			display: none;
+		}
+
+		#kontrol{
+			display: none;
+		}
+        /*3D Animation started here*/
+
+        .container {
+            margin: 50px 200px;
+            width: 450px;
+            height: 200px;
+            position: relative;
+            perspective: 1500px;
+        }
+
+        .carousel {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+
+        .item {
+            display: block;
+            position: absolute;
+            background: #000;
+            width: 250px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 5em;
+            text-align: center;
+            color: #FFF;
+            opacity: 0.95;
+            border-radius: 10px;
+        }
+
+        .a {
+            transform: rotateY(0deg) translateZ(250px);
+            background: #ed1c24;
+        }
+
+        .b {
+            transform: rotateY(60deg) translateZ(250px);
+            background: #0072bc;
+        }
+
+        .c {
+            transform: rotateY(120deg) translateZ(250px);
+            background: #39b54a;
+        }
+
+        .d {
+            transform: rotateY(180deg) translateZ(250px);
+            background: #f26522;
+        }
+
+        .e {
+            transform: rotateY(240deg) translateZ(250px);
+            background: #630460;
+        } 
+
+        .f {
+            transform: rotateY(300deg) translateZ(250px);
+            background: #8c6239;
+        }
+
+        .next, .prev {
+            color: rgb(0, 0, 0);
+            position: absolute;
+            top: 400px;
+            padding: 1em 2em;
+            cursor: pointer;
+            background: #CCC;
+            border-radius: 5px;
+            border-top: 1px solid #FFF;
+            box-shadow: 0 5px 0 #999;
+            transition: box-shadow 0.1s, top 0.1s;
+        }
+        .next:hover, .prev:hover { color: rgb(1, 148, 1); }
+        
+        .next { left: 19em; }
+        .prev { left: 10em; }
+
+		@media(max-width: 860px){
+
+			.kontrol{
+				display: block;
+			}
+
+
+			.menubar{
+				position: fixed;
+				margin: 0;
+				padding: 0;
+				width: 100%
+
+
+			}
+
+			.menubar ul{
+				position: absolute;
+				margin-top: 80px;
+				margin-left: 0;
+				width: 100%;
+				box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+				display: none;
+				background-color: #36848a;
+
+
+			}
+
+			.menubar ul li{
+				display: block;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+
+			}
+
+			.menubar a{
+				width: 100%;
+				font-size: 30px;
+				line-height: 70px;
+				border-radius: 0;
+				border-bottom: 1px dotted gray;
+
+			}
+
+			.menubar a:hover{
+				color: black;
+				box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+
+			
+			}
+
+			#kontrol:checked~ul{
+				display: block;
+			}
+
+		}
+    	
+    </style>
+
+
+    
+</head>
+<body>
+
+	<div class="menubar">
+		<input type="checkbox" id="kontrol">
+		<label for="kontrol" class="kontrol"><i class="fa fa-bars"></i></label>
+		<ul>
+			<li><a href="index.html">Anasayfa</a></li>
+			<li><a href="hakkımda.html">Hakkımda</a></li>
+			<li><a href="yeteneklerim.html">Yeteneklerim</a></li>
+			<li><a href="hobilerim.html">Hobilerim</a></li>
+			<li><a href="iletişim.html">İletişim</a></li>
+			<li><a href="soru.html">Soru & Görüşleriniz</a></li>
+		</ul>
+	</div>
+
+    
+    <div class="container">
+        
+        <div class="carousel">
+          <div class="item a">Futbol</div>
+          <div class="item b">Yüzme</div>
+          <div class="item c">Doğa</div>
+          <div class="item d">Film</div>
+          <div class="item e">Seyahat</div>
+          <div class="item f">Oyun </div>
+        </div>
+
+    </div>
+
+    <div class="next">Sonraki</div>
+    <div class="prev">Önceki</div>
+
+    <script type="text/javascript" src="hobiler.js"></script>
+    
+</body>
+</html>
